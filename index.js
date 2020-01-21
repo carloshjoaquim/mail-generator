@@ -2,10 +2,10 @@ const express = require('express')
 const app = express()
 
 const words = require('./words')
-const port = 8000
+var port = process.env.PORT || 8080;
 
 
-app.get("/generateMail", (req, res) => {
+app.get("/generate", (req, res) => {
     const domain = req.query.domain
     const arrayPosition = Math.floor(Math.random() * words.length)
     const name = words[arrayPosition];
