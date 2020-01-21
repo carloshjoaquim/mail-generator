@@ -9,9 +9,10 @@ app.get("/generate", (req, res) => {
     const domain = req.query.domain
     const arrayPosition = Math.floor(Math.random() * (words.length-1))
     const name = words[arrayPosition];
-    const seconds = new Date().getSeconds()
+    const number = Math.floor(Math.random() * 999)
 
-    const mail = `teste.${name}${seconds}@${domain}.com`
+
+    const mail = `teste.${name}${number}@${domain}.com`
     res.send({mail})
 })
 
