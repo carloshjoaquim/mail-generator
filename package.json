@@ -1,0 +1,17 @@
+{
+    "name": "geraEmail",
+    "version": "1.0.0",
+    "description": "gerador de email para teste",
+    "main": "index.js",
+    "author": "Carlos Joaquim",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.16.3"
+    },
+    "engines": {
+      "node":"8.10.0"
+    },
+    "scripts":{
+      "start": "node index.js"
+    }
+  }
