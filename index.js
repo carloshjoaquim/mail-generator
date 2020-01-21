@@ -7,7 +7,7 @@ var port = process.env.PORT || 8080;
 
 app.get("/generate", (req, res) => {
     const domain = req.query.domain
-    const arrayPosition = Math.floor(Math.random() * words.length)
+    const arrayPosition = Math.floor(Math.random() * (words.length-1))
     const name = words[arrayPosition];
     const seconds = new Date().getSeconds()
 
